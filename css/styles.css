@@ -1,0 +1,284 @@
+* {
+  box-sizing: border-box;
+  }
+
+ /*        GENERAL       */
+  body {
+    background: #ffffcc;
+    color:#5c5c8a;
+    font-family: 'Josefin Slab', serif;
+    font-style: italic;
+    }
+  .wrapper {
+    text-align: center;
+    font-size: 1.30em;
+    line-height: 1.30em;
+    }
+  nav {
+    text-transform: uppercase;
+    padding-left: 0;
+    }
+  h2 {
+    text-transform: uppercase;
+    font-size: .9em;
+    padding-top: 2.9rem;
+    padding-bottom: 1.6rem;
+    }
+ img {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    }
+  h1,
+  h2,
+  h3,
+  a {
+    color:#47476b;
+    font-family: 'Nova+Mono', sans-serif;
+  }
+ a {
+    text-decoration: none;
+    display: block;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: white;
+    font-weight: bold;
+    font-size: .9em;
+    }
+   ul {
+    list-style-type: none;
+      }
+ ul li {
+    margin-bottom: .4em;
+   }
+.profile-image {
+  width: 80%;
+}
+.my-name {
+  padding-top: 10px;
+  padding-bottom: 1px;
+}
+header {
+  padding-bottom: 20px;
+}
+.portfolio {
+  background: #fdfefe;
+}
+  .skills {
+    background: #fdfefe;
+  }
+  .skills-img {
+    width: 50%;
+      }
+  .contact {
+  padding-top: 2em;
+  padding-bottom: 1.8em;
+  font-size: 1.1em;
+  line-height: 1em;
+  display: inline-block;
+  padding-top: 10px;
+   }
+   .contact h2 {
+     padding-top: 50px;
+     padding-bottom: 15px;
+   }
+  .contact a {
+    display: inline;
+    padding-left: 20px;
+    background: #ffffcc;
+    color: #5c5c8a;
+  }
+  .contact ul {
+    padding-top: 25px;
+    padding-bottom: 20px;
+    }
+    .contact li {
+      padding-bottom: 10px;
+    }
+.home,
+.portfolio,
+.skills,
+.contact {
+  padding: 0 5%;
+  text-align: center;
+  padding-bottom: 20px;
+  }
+ .portfolio h2,
+ .skills h2,
+ .contact h2 {
+   color: #663d00;
+ }
+/********************  pseudo classes ********************/
+
+a:hover {
+color: #29293d;
+}
+a:active {
+color: darkgrey;
+}
+
+/******************** FOOTER *************/
+.main-footer {
+  border-top: 1px solid lightgrey;
+    padding: 30px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+.main-footer h3,
+.main-footer a {
+  float: left;
+  width: 50%;
+  margin-top: 0;
+  padding-top: 0;
+  }
+.main-footer a {
+  text-align: right;
+  text-transform: uppercase;
+  background: #ffffcc;
+  padding-right: 6px;
+}
+.main-footer h3 {
+  padding-left: 6px;
+  }
+ .main-footer ul {
+   display: none;
+  }
+
+ /************ MEDIA QUERIES 768 PX**************************/
+
+@media (min-width: 768px) {
+  nav li {
+    display: inline-block;
+  }
+  nav a {
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 0;
+    background: #ffffcc;
+    font-size: .6em;
+  }
+  .main-header {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .home img,
+  .home p {
+    float: right;
+  }
+  .home img {
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  .home p {
+    width: 60%;
+    }
+  .portfolio {
+    margin: 0;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  .clear {
+    float: left;
+    width: 50%;
+    padding-left: 10px;
+  }
+  .clear:nth-child(4) {
+    clear: left;
+}
+  .group:after {
+    content:"";
+    display: table;
+    clear: both;
+  }
+  .skills-img,
+  .skills-p {
+    float: right;
+  }
+  .skills-img {
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 0;
+      }
+  .skills-p {
+    width: 60%;
+    padding-left: 60px;
+    }
+    .skills-p {
+      padding-top: 27px;
+    }
+    #footer-top {
+   display: none;
+    }
+ .main-footer {
+    margin-bottom: 50px;
+    }
+  .main-footer ul {
+   display: inline-block;
+ }
+ .main-footer li a {
+ padding-left: 10px;
+ padding-right: 10px;
+ }
+ .main-footer h3 {
+ float: left;
+ padding-left: 20px;
+ margin-top: 16px;
+ }
+
+ .main-footer ul {
+ float: right;
+ }
+ .main-footer ul li {
+ float: left;
+ text-align: right;
+ }
+  .contact {
+    padding-left: 10%;
+    padding-right: 10%;
+    }
+   }
+/**********  MEDIA QUERIES 1024px      **************/
+
+@media (min-width: 1024px) {
+   .wrapper {
+     padding-left: 2%;
+     padding-right: 2%;
+   }
+    nav {
+    float: right;
+  }
+  nav li {
+    float: left;
+  }
+  nav li a {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+.my-name {
+  float: left;
+}
+.portfolio,
+.home {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.clear {
+  float: left;
+  width:33%;
+  padding-left: 7px;
+}
+.clear:nth-child(4) {
+  clear: none;
+}
+.clear:nth-child(5) {
+  clear: left;
+}
+.contact p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.main-footer {
+  margin-bottom: 25px;
+}
+}
